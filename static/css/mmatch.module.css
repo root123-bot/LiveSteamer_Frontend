@@ -1,0 +1,79 @@
+.holder {
+  background-color: rgb(236, 236, 236);
+  cursor: pointer;
+}
+
+.holder:hover {
+  background-color: rgb(206, 206, 206);
+}
+
+.wrapper {
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teamWrapper,
+.vs {
+  display: inline;
+}
+
+.teamName {
+  color: grey;
+  font-weight: bold;
+  font-style: italic;
+  margin-left: 8px;
+}
+
+.hl {
+  margin-top: 1.5%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.otherContentWrapper,
+.otherContentWrapper1 {
+  margin-top: 0%;
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.otherContentWrapper1 {
+  padding-bottom: 2%;
+}
+
+.pitchName {
+  margin-left: 12px;
+  font-weight: bold;
+  color: grey;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.time {
+  color: grey;
+  font-weight: bold;
+  text-align: right;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.timeValue {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #50988c;
+}
+
+.timeValue:hover {
+  color: #005f51;
+}

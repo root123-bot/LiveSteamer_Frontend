@@ -1,0 +1,20 @@
+
+.popo {
+    display: inline;
+    color: grey;
+    font-weight: bold;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    padding-left: 10px;
+    font-style: italic;
+    font-size: 110%;
+}
+
+.hrc {
+    margin-top: 1%;
+    padding-top: 0%;
+}
+
+.val {
+    margin-left: 10px;
+}

@@ -1,0 +1,18 @@
+.container {
+  /* padding-left: 2%; */
+}
+
+.lab {
+  color: rgb(67, 67, 67);
+  font-weight: bold;
+  font-size: 110%;
+  font-style: italic;
+}
+
+.inp {
+  width: 300px;
+  height: 32px;
+  border: 2px solid rgb(152, 152, 152);
+  outline: none
+    /* this is how to remove the border default one found in input fields https://www.youtube.com/watch?v=Yor9Y73M764 */;
+}

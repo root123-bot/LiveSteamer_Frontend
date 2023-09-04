@@ -1,0 +1,20 @@
+
+.item {
+    font-weight: bold;
+    padding: 3%;
+    font-size: 120%;
+    letter-spacing: 0.5px;
+    font-family: cursive;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.item:hover {
+    color: rgb(80, 80, 80);
+}
+
+
+.lab {
+    margin-left: 10px;
+}

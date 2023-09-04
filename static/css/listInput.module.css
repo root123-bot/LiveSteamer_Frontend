@@ -1,0 +1,33 @@
+.lab {
+  font-weight: bold;
+  font-size: 110%;
+  color: rgb(67, 67, 67);
+  font-style: italic;
+}
+
+.sm {
+  display: block;
+  cursor: pointer;
+  font-weight: bold;
+  color: rgb(209, 74, 74);
+  font-family: cursive;
+}
+
+.sm:hover {
+  text-decoration: underline;
+}
+
+.tarea {
+  width: 400px;
+  resize: none;
+  outline: none; /* nishajua hivi ndo jinsi yakuondoa ile border inayoonekana kwenye input ukianza kuandika kitu chochote hivi ndo unavyoitoa... https://www.youtube.com/watch?v=Yor9Y73M764 */
+  /* this is how to remove the scrollbar from the text area https://www.youtube.com/watch?v=Yor9Y73M764 */
+  overflow: hidden;
+  font-size: 25px;
+  color: rgb(114, 114, 114);
+}
+
+/* this is how to remove the scrollbar from the text area https://www.youtube.com/watch?v=Yor9Y73M764 */
+.tarea::-webkit-scrollbar {
+  width: 0px;
+}

@@ -1,0 +1,28 @@
+.container {
+  padding-top: 1%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inputContainer {
+  padding-left: 2%;
+  display: flex;
+}
+
+.sma {
+  float: right; /* uzuri wa kutumia float ni kwamba yenyewe inaifanya element isimiliki any space in document ni kama z-index ni kwamba yenyewe inakuwa juu kabisa so kwa hii scenario imekaa vizuri... */
+}
+
+.error {
+  margin-left: 2%;
+  color: rgb(181, 34, 34);
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.success {
+  display: none;
+}

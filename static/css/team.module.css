@@ -1,0 +1,157 @@
+.container {
+  padding-top: 1%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sma {
+  float: right; /* uzuri wa kutumia float ni kwamba yenyewe inaifanya element isimiliki any space in document ni kama z-index ni kwamba yenyewe inakuwa juu kabisa so kwa hii scenario imekaa vizuri... */
+}
+
+.error {
+  margin-left: 2%;
+  color: rgb(181, 34, 34);
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.error1 {
+  margin-left: 2%;
+  color: rgb(179, 177, 177);
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.success {
+  display: none;
+}
+
+.inputContainer {
+  padding-left: 2%;
+  display: flex;
+}
+
+.inputContainer3,
+.inputContainer4 {
+  padding-left: 2%;
+  display: flex;
+}
+
+.imgCont {
+  padding-left: 2%;
+  padding-top: 5%;
+}
+
+.inputContainer1 {
+  padding-left: 2%;
+  display: flex;
+  padding-top: 5%;
+}
+
+.lab {
+  color: rgb(67, 67, 67);
+  font-weight: bold;
+  font-size: 110%;
+  font-style: italic;
+}
+
+.sm {
+  font-weight: bold;
+  color: rgb(186, 68, 68);
+  font-family: cursive;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.createComp {
+  width: 75%;
+  display: none;
+  position: absolute;
+  top: 18%;
+  background: rgb(225, 210, 48);
+  border: 2px dotted rgb(153, 153, 153);
+  border-radius: 2px 2px;
+  padding-bottom: 8%;
+}
+
+.sma {
+  float: right;
+}
+
+.error {
+  margin-left: 2%;
+  color: rgb(181, 34, 34);
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.success {
+  display: none;
+}
+
+.inputContainer {
+  padding-left: 2%;
+  display: flex;
+}
+
+.i {
+  background-image: none;
+}
+
+.closeBtn,
+.closeBtnx {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #888;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.createVenue {
+  width: 75%;
+  display: none;
+  position: absolute;
+  top: 18%;
+  background: rgb(207, 48, 20);
+  border: 2px dotted rgb(153, 153, 153);
+  border-radius: 2px 2px;
+  height: 500px;
+}
+
+.createManager {
+  width: 75%;
+  display: none;
+  position: absolute;
+  top: 18%;
+  background: rgb(171, 84, 203);
+  border: 2px dotted rgb(153, 153, 153);
+  border-radius: 2px 2px;
+  height: 550px;
+}
+
+.errorMan {
+  margin-left: 2%;
+  color: #654141;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.successMan {
+  display: none;
+}

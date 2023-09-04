@@ -1,0 +1,67 @@
+.container {
+  border: 1px solid rgb(195, 195, 195);
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(138, 138, 138),
+    rgb(205, 205, 205)
+  );
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container:hover {
+  box-shadow: 1px 1px 5px 1px grey;
+  background-color: rgb(193, 193, 193);
+}
+
+.imgWrapper {
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 120%;
+  color: rgb(108, 108, 108);
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+}
+
+.holder {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ima {
+  margin-right: 9%;
+}
+
+.spa {
+  margin-right: 9%;
+  font-weight: bold;
+  color: rgb(83, 82, 82);
+  font-size: 115%;
+}
+
+.spa1 {
+  color: rgb(83, 82, 82);
+  font-weight: bold;
+  font-size: 115%;
+}
+
+.mini {
+  font-weight: bold;
+  font-style: italic;
+  color: grey;
+}

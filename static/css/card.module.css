@@ -1,0 +1,47 @@
+
+
+.card {
+    display: inline;
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(170, 169, 169);
+    border-radius: 2px 2px;
+    width: 330px;
+    height: 300px;
+    margin: 1%;
+}
+
+.card:hover {
+    background-color: rgb(213, 213, 213);
+}
+
+.imageContainer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.item1 {
+    text-align: center;
+    color: rgb(0, 163, 158);
+    font-size: 130%;
+    font-weight: bold;
+    margin-top: 10%;
+    font-style: italic;
+}
+
+
+.item2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 140%;
+    font-weight: bold;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}

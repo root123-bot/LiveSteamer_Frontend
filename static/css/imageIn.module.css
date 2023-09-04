@@ -1,0 +1,21 @@
+.jina {
+  font-weight: bold;
+  color: rgb(67, 67, 67);
+  font-size: 110%;
+  font-style: italic;
+}
+
+.upload {
+  display: none;
+}
+
+.chan {
+  width: 250px;
+  height: 220px;
+  border: 1px dotted rgb(179, 177, 177);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(231, 231, 231); /* hii color for first image..  */
+  cursor: pointer;
+}

@@ -1,0 +1,213 @@
+/* current styles */
+
+.container {
+  padding-top: 1%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sma {
+  float: right;
+}
+
+.error {
+  margin-left: 2%;
+  color: rgb(181, 34, 34);
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.success {
+  display: none;
+}
+
+.inputContainer {
+  padding-left: 2%;
+  display: flex;
+  /* padding-top: 5%; */
+}
+.inputContainer1 {
+  padding-left: 2%;
+  display: flex;
+  padding-top: 5%;
+}
+
+.inputContainer2 {
+  padding-left: 2%;
+  display: flex;
+  padding-top: 5%;
+}
+
+.dateHolder {
+  width: 300px;
+}
+
+.lab {
+  color: rgb(67, 67, 67);
+  font-weight: bold;
+  font-size: 110%;
+  font-style: italic;
+}
+
+.sm {
+  font-weight: bold;
+  color: rgb(186, 68, 68);
+  font-family: cursive;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  top: 10%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px dotted rgb(134, 134, 134);
+  height: 85%;
+  z-index: 2;
+  background: linear-gradient(#1d0304, #3b3130);
+  display: none;
+}
+
+.parentContainer {
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 85%;
+}
+
+.popupContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hr {
+  border-color: rgb(154, 154, 154);
+  margin-bottom: 0%;
+  padding-bottom: 0.5vh;
+}
+
+.comp {
+  color: rgb(201, 201, 201);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 100%;
+}
+
+.parentDashboardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashHolder {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.t1 {
+  font-weight: bold;
+  font-size: 130%;
+  color: whitesmoke;
+  margin-left: 15px;
+  margin-right: 45px;
+}
+
+.vs {
+  color: rgb(201, 201, 201);
+  font-weight: bold;
+  font-size: 110%;
+  margin-right: 45px;
+  text-decoration: underline;
+}
+
+.t2 {
+  font-weight: bold;
+  font-size: 130%;
+  color: whitesmoke;
+  margin-right: 15px;
+}
+
+.demo {
+  border: rgb(254, 245, 187);
+}
+
+.parentDiv {
+  display: flex;
+}
+
+.scroll1,
+.scroll2 {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(80, 55, 55) transparent;
+}
+/* umuhimu wa position 'sticky' rather than 'fixed' is that sticky makes the element/content 
+unscrollable just like position 'fixed' but advantaget of position 'sticky' is that it TAKES ACCOUNT
+THE AREA OCCUPIED BY THE CONTENT unlike the position 'fixed' which act just like 'float' where it does
+not take account the area occupied by our component so lets say if you have other content it will take the
+area occupied by fixed element this means in that case u will have two element overlap which needs you to use
+margin or padding css so as to remove that overlapping, but in our case of 'sticky' there is no overlap since the 
+area occupied by our sticky element taken in account... But disadvantages of both is that it needs u to add background
+to fixed/sticky element so when its scrollable to hide the area scrolled when it pass to fixed/stick element 
+https://stackoverflow.com/questions/5311706/position-fixed-content-overlapping-problem*/
+.articleParent {
+  padding-bottom: 1vh;
+  position: sticky;
+  top: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(91, 44, 44);
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.starter {
+  margin-right: 0.5vw;
+  font-weight: bold;
+  font-style: italic;
+  color: grey;
+}
+
+.note {
+  padding-top: 5vh;
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 110%;
+}
+
+.loaderHolder {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.manageTeamError {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  background-color: rgb(231, 42, 42);
+}
+
+.par {
+  font-weight: bold;
+  color: rgb(234, 234, 234);
+  font-style: italic;
+  margin-left: 25px;
+}

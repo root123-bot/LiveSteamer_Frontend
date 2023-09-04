@@ -1,0 +1,5 @@
+In short nimetengeneza hii yaani maanake hii ndo page au system application ambayo itakua
+accessed mtu akishalogin ndo maana unaona tu mwenyewe kuwa ikianza hii system on home inamuonesha 
+mtu dashboard yaani vitu ambavyo alishawahi kuvifanya kitu kama statistical data.. Ndo maana hata kwao kwao
+hawa ligr.live endapo utaaccess hii url kama haujalogin wataku-redirect in the login page but if you've login
+wataku-direct kwenye hii interface kama yangu hapa...

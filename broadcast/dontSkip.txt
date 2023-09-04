@@ -1,0 +1,25 @@
+
+
+            HII BLOCK OF CODE NIMEWEKA KWENYE KILA PAGE ILI ITUPE/BROADCAST ITS MATCHES CONTEXT FOR MORE EXPLAANTION SEE IN ANY PAGE
+            FOR FURTHER EXPLAANTION VIEW IN 'app.js' FOR MORE THIS WILL HELP YOU TO UNDERSTAND
+            https://youtu.be/-hDcd4Lp_Ls
+
+
+{
+    /* hii nimeiweka hapa imefanya vizuri ime-send all available context to others nimetest kui-weka in _app.js
+      ikawa inakataa ikawa inasend empty array but here imekaa sawa...
+      if you receive sync message then you need to send available 'matches' in context to all subscribers....
+      so if someone want to be updated after reload/refresh he should send this message...
+      we need to reply available matches.. you should add this useEffect in all pages for it to work perfectly
+      and the easy way is using _app.js but app.js context matches return [] empty array so that's why we need to 
+      add this manually to all pages... other message i added them to _app.js since they work perfectly */
+  }
+  useEffect(() => {
+    bc.onmessage = ({ data }) => {
+      if (data === "Sync me!") {
+        // no need to reply the message if you have no any context
+        MatchContext.matches.length > 0 &&
+          bc.postMessage({ matches: MatchContext.matches });
+      }
+    };
+  }, []);

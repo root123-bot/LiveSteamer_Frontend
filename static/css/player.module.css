@@ -1,0 +1,55 @@
+.container {
+  padding-top: 1%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sma {
+  float: right;
+}
+
+.error {
+  margin-left: 2%;
+  color: rgb(181, 34, 34);
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.success {
+  display: none;
+}
+
+.inputContainer {
+  padding-left: 2%;
+  display: flex;
+}
+
+.inputContainer1 {
+  padding-left: 2%;
+  display: flex;
+  padding-top: 5%;
+}
+
+.inputContainer2 {
+  padding-left: 2%;
+  display: flex;
+  padding-top: 5%;
+}
+
+.lab {
+  color: rgb(67, 67, 67);
+  font-weight: bold;
+  font-size: 110%;
+  font-style: italic;
+}
+
+.sm {
+  font-weight: bold;
+  color: rgb(186, 68, 68);
+  font-family: cursive;
+  text-decoration: underline;
+  cursor: pointer;
+}

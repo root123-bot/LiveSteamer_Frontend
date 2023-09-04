@@ -1,0 +1,51 @@
+{
+  /* 
+    HII CONTEXT YANGU IPO SAWA WEWE PASKO ULIPOKUWA UNAKOSEA NI KWAMBA BAADA YA KU-ADD MATCH IN match.js ULIKUWA
+    UNAENDA KU-REFRESH PAGE YA KWENYE player.js SASA HICHI KITENDO CHA KU-REFRESH A PAGE KINASABABISHA 
+    WHOLE APPLICATION TO RELOAD AND WHEN IT RELOAD CAUSE YOUR CONTENT TO BE STARTED AGAIN..
+    NIMETEST NOW KU-NAVIGATE TO player.js AFTER ADDING MATCHES WITHOUT REFRESHING THE PAGE NIMEONA CONTEXT IPO VIZURI
+    KABISA WITH IDS OF MATCHES WE ADDED KO HAPA NDO NILIPOKUWA NAKOSEA COZ KUMBUKA UKI-REFRESH PAGE UNAFANYA SERVER
+    IANZE UPYA IWE REFRESHED, KO HAPO NDO TULIPOKUWA TUNA-BUGI, NOW KILA KITU KIPO SAWA NA TUNAWEZA KUENDELEA MBELE
+    CHA MUHIMU DON'T REFRESH PAGE JUST NAVIGATE TO OTHER PAGE USING LINKS IN YOUR PAGE OR USING url without refresh your browser
+    USISAHAU KIJANA... KU-REFRESH PAGE KUNASABABISHA STATE IANZE UPYA NA KUMBUKA KUWA HIZI CONTEXT NI KAMA STATE NA ZINAKUWA
+    AVAILABLE IN ALL PAGES SO UKI-REFRESH ANY PAGE UNASABABISHA ZI-LOSE DATA... NARUDIA USISAHAU..
+*/
+}
+
+
+useEffect(() => {
+    {
+      /* you receive object containing 'data' attribute which is 'actual' message/data sent, we destructuring it here.. nahisi 
+  kwa sababu hii useEffect ina-execute once at start then it takes the hardcoded values of matches which initially is [] empty array
+  that's why we have that kind of bug */
+    }
+    bc.onmessage = ({ data }) => {
+      {
+        /* if you receive sync message then you need to send available 'matches' in context to all subscribers....
+           so if someone want to be updated after reload/refresh he should send this message...
+           we need to reply available matches.. */
+      }
+
+      // if you receive the message containing key of matches then you need to update your context...
+      // WE DON'T EXPECT ANY OTHER MESSAGES/DATA APART FROM THESE TWO
+      if (data.matches) {
+        console.log("I received matches to update me ", data.matches);
+        // we need to call update/syncMatches method..
+        syncMatches(data.matches);
+      }
+
+      if (data.new) {
+        console.log("i receive a new match to add in my context ", data.new);
+        // this will add to its context i think
+        setMatches((currentMatches) => {
+          // console.log('Im on my way to update or add id i received as match')
+          return [...currentMatches, { [data.new]: {} }];
+        });
+      }
+    };
+    // if you receive the message containing key of matches then you need to update your context...
+    // WE DON'T EXPECT ANY OTHER MESSAGES/DATA APART FROM THESE
+
+    // every page when refreshed/mounted/loaded it should ask for contexts from other tabs
+    // bc.postMessage("Sync me!");
+  }, []);

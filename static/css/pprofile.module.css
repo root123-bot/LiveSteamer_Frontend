@@ -1,0 +1,76 @@
+@font-face {
+  font-family: font1;
+  src: url(../../fonts/openSans/OpenSans-SemiboldItalic.ttf);
+}
+
+.container {
+  border-radius: 2px 2px;
+  border: 2px solid grey;
+  background: linear-gradient(to right, rgb(43, 43, 43), rgb(104, 104, 104));
+  /* background: linear-gradient(to right, rgb(43, 43, 43), rgb(255, 255, 255)); */
+  /* background: linear-gradient(to right, rgb(43, 43, 43), rgb(143, 154, 59)); */
+
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.holder {
+  display: flex;
+  margin-left: 0.5vw;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(97, 89, 89);
+}
+
+.holder2 {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pnum {
+  color: white;
+  font-size: large;
+  font-style: italic;
+  margin-right: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+
+.pname {
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(176, 175, 175);
+  border-bottom: 2px solid rgb(158, 158, 158);
+}
+
+.post {
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(163, 162, 162);
+}
+
+.pointer {
+  width: 20px;
+  margin-right: 15px;
+}
+
+.checkHolder {
+  margin-right: 2vw;
+}
+
+.checkBox {
+  /* font-weight: bold; */
+  font-family: font1;
+  text-transform: uppercase;
+}

@@ -1,0 +1,32 @@
+.topDiv {
+    background-color: rgb(222, 219, 219);    
+    padding: clamp(2px, 1%, 3px); /* https://stackoverflow.com/questions/38078957/can-we-define-min-margin-and-max-margin-max-padding-and-min-padding-in-css */
+    height: auto;
+    /*height: 5.6vh;   then i know that the other part of body should occupy 94.4vh */
+}
+
+.innerDiv {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    padding-right: 27%;
+    display: inline;
+    cursor: pointer;
+}
+
+.inlineDiv {
+    display: inline;
+}
+
+
+.other:hover {
+    color: rgb(55, 55, 55);
+}
+
+.btn {
+    padding-left: 10%;
+    display: inline;
+}

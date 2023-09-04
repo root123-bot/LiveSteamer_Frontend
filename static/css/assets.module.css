@@ -1,0 +1,76 @@
+@font-face {
+  font-family: myFont;
+  src: url(../../fonts/Sono_Monospace/Sono_Monospace-SemiBold.ttf);
+}
+
+.sec {
+  padding-top: 0%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 94.4vh;
+  overflow-y: hidden; /* 'auto' this will allow div to be scrolled instead of body/document so when we have large content it will be scrolled https://www.geeksforgeeks.org/making-a-div-vertically-scrollable-using-css/ */
+  overflow-x: hidden;
+  margin-top: 0%;
+}
+
+.col1 {
+  margin-top: 1%;
+  width: 15%;
+  height: 98%;
+  display: inline-block;
+  border-right: 1px solid rgb(209, 209, 209);
+}
+
+.col2 {
+  margin-top: 1%;
+  width: 85%;
+  height: 98%;
+  display: inline-block;
+  float: inline-end; /* mwanzo ilikua inakaa on second column kweli but inapoanzia ni on the last height the first col end.. so if you have first column content which ends at the center of screen then this second column will start at the height of first one.. To avoid this and makes everything good is to use 'float' if you have a number of elements which are aligned in grid by using this float you will align div either way you want.. */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.head {
+  color: rgb(92, 92, 92);
+  font-style: italic;
+  font-size: 140%;
+  color: rgb(29, 148, 175);
+  font-family: myFont;
+}
+
+.toTrack {
+  color: rgb(150, 150, 150);
+}
+
+.toTrack1 {
+  color: rgb(80, 80, 80);
+}
+
+.page {
+  display: none;
+}
+
+.page1 {
+  display: block;
+}
+
+.content {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.cardWrapper {
+  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap; /* this is good since it never allow the items to be placed in one row.. it allow em to drop in another row if there is no space.. */
+}
+
+.none {
+  text-align: center;
+  font-weight: bold;
+  color: grey;
+  font-size: 140%;
+  font-style: italic;
+}
