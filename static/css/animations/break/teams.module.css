@@ -1,0 +1,19 @@
+.container {
+  height: 98vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.outerContainer {
+  /* background-color: rgb(12, 91, 136); */
+  position: relative;
+}
+
+.innerContainer {
+  width: 800px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(7, 72, 109);
+  margin-bottom: 0px;
+}
