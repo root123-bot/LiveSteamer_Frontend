@@ -1,9 +1,9 @@
-import Teams from "../components/animations/break/teams";
+import TeamsAnimation from "../components/animations/break/teams";
 
 function testAnimation() {
   return (
     <div>
-      <Teams />
+      <TeamsAnimation />
     </div>
   );
 }

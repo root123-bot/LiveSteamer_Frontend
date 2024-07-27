@@ -1,6 +1,6 @@
 import NextProgress from "nextjs-progressbar";
 import { useState } from "react";
-import { AppContext } from "../store/AppContext";
+import AppContextProvider, { AppContext } from "../store/AppContext";
 
 // nested tertiary operator(?, :) acts like 'switch statement' and not like you know https://javascript.plainenglish.io/javascript-nested-ternary-operator-dc28551fb8c3
 
@@ -122,21 +122,11 @@ export default function MyApp({ Component, pageProps }) {
     console.log("Im trying to add event");
   }
 
-  const value = {
-    matches,
-    syncMatches,
-    addMatchDetails,
-    removeMatch,
-    addHomeTeam,
-    addAwayTeam,
-    setdidHaveExtraTime,
-    addEvent,
-  };
 
   return (
-    <AppContext.Provider value={value}>
+    <AppContextProvider>
       <NextProgress color="red" />
       <Component {...pageProps} />
-    </AppContext.Provider>
+    </AppContextProvider>
   );
 }
